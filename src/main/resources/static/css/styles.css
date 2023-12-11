@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* Remove the navbar's default rounded borders and increase the bottom margin */
+.navbar {
+	margin-bottom: 50px;
+	border-radius: 0;
+	background-color: #9C27B0; /* Morado oscuro */
+	font-family: 'Arial Black', sans-serif; /* Cambia la fuente */
+}
+
+/* Remove the jumbotron's default bottom margin */
+.jumbotron {
+	margin-bottom: 0;
+	background-color: #673AB7; /* Morado más claro */
+	color: #ffffff; /* Texto blanco */
+	font-family: 'Impact', sans-serif; /* Cambia la fuente */
+}
+
+/* Add a vibrant background color and some padding to the footer */
+footer {
+	background-color: #E1BEE7; /* Morado claro */
+	padding: 25px;
+	color: #ffffff; /* Texto blanco */
+	font-family: 'Comic Sans MS', cursive; /* Cambia la fuente */
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 90%;
+		max-width: 90%;
+	}
+}
+
+.panel-heading {
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #AB47BC; /* Morado oscuro */
+	color: #ffffff; /* Texto blanco */
+	font-family: 'Rockwell', serif; /* Cambia la fuente */
+}
+
+.precio {
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 5px;
+	color: #7E57C2; /* Morado más claro */
+	font-family: 'Verdana', sans-serif; /* Cambia la fuente */
+}
+
+.panel-producto {
+	cursor: pointer;
+}
+
+/* Estilos para la factura */
+
+.invoice-title h2, .invoice-title h3 {
+	display: inline-block;
+	color: #4A148C; /* Morado oscuro */
+	font-family: 'Courier New', monospace; /* Cambia la fuente */
+}
+
+.invoice-body .table > tbody > tr > .no-line {
+	border-top: none;
+}
+
+.invoice-body .table > thead > tr > .no-line {
+	border-bottom: none;
+}
+
+.invoice-body .table > tbody > tr > .thick-line {
+	border-top: 2px solid #9C27B0; /* Morado oscuro */
+}
