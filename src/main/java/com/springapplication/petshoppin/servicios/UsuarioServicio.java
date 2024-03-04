@@ -28,7 +28,5 @@ public class UsuarioServicio {
 	public Usuario buscarPorEmail(String email) {
 		return repositorio.findFirstByEmail(email);
 	}
-	
-	
 
 }

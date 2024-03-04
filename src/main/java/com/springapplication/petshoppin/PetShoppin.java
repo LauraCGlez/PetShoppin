@@ -25,17 +25,17 @@ public class PetShoppin {
 	public CommandLineRunner initData(UsuarioServicio usuarioServicio, ProductoServicio productoServicio) {
 		return args -> {
 
-			Usuario usuario = new Usuario("Laura", "CGlez", null, "laura@gmail.com", "12345678");
+			Usuario usuario = new Usuario("Laura", "CGlez", "/home/lauracglez/Desktop/PetShoppin/src/main/resources/static/images/avatar.svg", "laura@gmail.com", "12345678");
 			usuario = usuarioServicio.registrar(usuario);
 
-			Usuario usuario2 = new Usuario("Luis", "BLores", null, "luis@gmail.com", "12345678");
+			Usuario usuario2 = new Usuario("Luis", "BLores", "/home/lauracglez/Desktop/PetShoppin/src/main/resources/static/images/avatar.svg", "luis@gmail.com", "12345678");
 			usuario2 = usuarioServicio.registrar(usuario2);
 
 
 			List<Producto> listado = Arrays.asList(
-					new Producto("Árbol", 30.0f, "arbol.jpg", usuario),
-					new Producto("Arnés para perros", 20.0f, "/arnes.jpg", usuario2),
-					new Producto("Cama", 10.5f, "img/cama.jpg", usuario2),
+					new Producto("Árbol", 30.0f, "static/images/arbol.jpg", usuario),
+					new Producto("Arnés para perros", 20.0f, "/home/lauracglez/Desktop/PetShoppin/src/main/resources/static/images/arnes.jpg", usuario2),
+					new Producto("Cama", 10.5f, "src/main/resources/static/images/cama.jpg", usuario2),
 					new Producto("Comida", 5.0f, "/img/comida.jpg", usuario2),
 					new Producto("Dispensador de bolsas", 10.0f, "src/main/resources/static/images/dispensador.jpg", usuario2),
 					new Producto("Transportin", 50.0f, "static/images/transportin.jpg", usuario2));

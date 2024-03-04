@@ -74,9 +74,9 @@
 				</div>
 				<div class="col-md-4">
 					<div class="text-center">
-						<img
-							th:src="${#strings.isEmpty(producto.propietario.avatar)} ? @{http://api.adorable.io/avatars/140/{email}.png(email=${producto.propietario.email})} : ${producto.propietario.avatar}"
-							name="aboutme" width="140" height="140" class="img-circle">
+						<img th:src="${#strings.isEmpty(producto.propietario.avatar)} ? 'https://api.adorable.io/avatars/140/' + ${producto.propietario.email} + '.png' : ${producto.propietario.avatar}"
+							 width="140" height="140" class="img-circle" alt="image">
+
 						<h5><span
 								th:text="${producto.propietario.nombre + ' ' + producto.propietario.apellidos}"></span><br>
 							<span th:text="${producto.propietario.email}"></span></h5>
